@@ -61,10 +61,12 @@ Password:
 <input type="submit" value="Submit">    
 <input type="reset" value="Reset">  
 </form>   
-<script>function changecolor(){
+<script>
+function changecolor(){
                 let randomColor=Math.floor(Math.random()*16777215).toString(16);
                 document.body.style.backgroundColor='#'+randomColor;
-            } 
-</script>
+            }
+            setInterval(changecolor,1000);
+        </script>
 </Body>   
 </Html>
